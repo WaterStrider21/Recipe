@@ -1,0 +1,197 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+  
+/*media queries for nav and text blocks to be stacked rather than side by side*/
+
+body {
+font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 16px;
+
+}
+
+main{
+  display: block;
+  background-color: #ffff;
+  
+}
+
+nav ul li {
+  display: block;
+  float: left;
+  list-style: none;
+  width: 10%;
+  background-color: #FFBD59;
+  text-align: center;
+ 
+
+}
+nav form input{
+  border: #000000 solid 1px;
+  float: right;
+
+}
+.vl {
+  border-left: #000000 solid 2px;
+  height: 25px;
+}
+.vl{
+  display: block;
+  float: left;
+ padding-right: 25px;
+  list-style: none;
+}
+a:link{
+  color:#000000;
+
+}
+a:active{
+  color: #0000;
+
+}
+a:visited{ 
+  color:#000000 ;
+}
+a:hover{
+  color: #8F8E8E;
+}
+
+a {
+  text-decoration: none;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header{
+  background-color: #FFBD59;
+  border: #000000 solid 1PX;
+  height: 50px;
+}
+/*******************
+Home
+/*******************/
+
+.home {
+
+  float: left;
+  width: 50%;
+  text-align: left;
+  text-overflow: clip;
+  height: 500px;
+  padding: 0% 0% 0% 20%;
+  margin-top: 10%;
+ 
+
+ 
+ 
+}
+
+.home h1 {
+  font-family:'IBM Plex Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 40px; 
+}
+.home p{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px; 
+  width: 75%;
+
+}
+.home-image{
+  float:right;
+  width: 50%;
+  padding-right: 50%;
+  padding-left: 0%;
+  margin-top: 8%;
+
+
+
+ 
+}
+.home-img{
+ height:600px;
+  width:395px;
+  border: #000000 solid 3px;
+  opacity: .8;
+
+}
+
+
+
+footer {
+
+}
+
+
+/******************************************
+/* recipe guide
+/*******************************************/
+.guide{
+  background-image: url(homepage.jpg);
+  background-color: #FFBD59 ;
+  background-size:cover;
+}
+.guide_{
+  opacity: .8;
+  background-color: #FFBD59;
+  width: 1500px;
+  height:auto;
+  margin-top: 200px;
+  margin-left: 200px;
+
+}
+.guide{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.guide_list li {
+  list-style: none;  
+  text-align: center;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+
+}
+.guide h1{
+  text-align: center;
+  text-decoration: underline;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 40px; 
+
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
