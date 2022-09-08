@@ -20,10 +20,10 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
-  
-/*media queries for nav and text blocks to be stacked rather than side by side*/
 
-body {
+
+
+body { 
 font-family: 'IBM Plex Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Source Sans Pro', sans-serif;
@@ -81,6 +81,75 @@ a {
   text-decoration: none;
 }
 
+/*******************
+media queries
+/*******************/
+@media all and (min-width:375px)and (max-width:926px)
+{
+   /***home***/
+ 
+  .home-img{
+    display: none;
+  }
+   main .home{ 
+    padding: 5% 0% 0% 5%;
+    margin: 0% 0% 5% 25%;
+   
+    
+  }
+   .home h1{
+     font-size: 16px;
+     text-align: justify;
+
+   } 
+   .home p{
+    width:100%;
+    font-size: 16px;
+
+    
+   }
+   /***nav***/
+
+   nav ul li{
+     width:100%;
+     display:block;
+     float:left;
+     padding: 0% 75% 0% 0%;
+      background-color: #0000;
+     }
+    nav form input{
+    display: none;  
+ }
+ .vl{
+   border:none;
+ }
+
+ .nav-bar{
+  background-image:none;
+  background-color: #0000;
+  border: none;
+
+ }
+
+
+ /*****.guide****/
+ .guide{
+  display: inline;
+  width: 100%;
+  height: auto;
+  font-size: 16px;
+}
+
+.guide > section {
+  display: inline;
+  width: 100%;
+ padding: 25% 0% 0% 0%;
+ margin: 25px;
+  font-size: 14px;
+  
+}
+
+}
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -89,10 +158,8 @@ header{
   border: #000000 solid 1PX;
   height: 50px;
 }
-/*******************
-Home
-/*******************/
 
+ 
 .home {
 
   float: left;
@@ -127,11 +194,7 @@ Home
   width: 50%;
   padding-right: 50%;
   padding-left: 0%;
-  margin-top: 8%;
-
-
-
- 
+  margin-top: 8%; 
 }
 .home-img{
  height:600px;
@@ -141,8 +204,6 @@ Home
 
 }
 
-
-
 footer {
 
 }
@@ -151,47 +212,274 @@ footer {
 /******************************************
 /* recipe guide
 /*******************************************/
+
 .guide{
-  background-image: url(homepage.jpg);
-  background-color: #FFBD59 ;
-  background-size:cover;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+
 }
-.guide_{
-  opacity: .8;
-  background-color: #FFBD59;
+
+
+.guide{
   width: 1500px;
   height:auto;
   margin-top: 200px;
   margin-left: 200px;
-
-}
-.guide{
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-family: 'Poppins', sans-serif;
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
-
-.guide_list li {
-  list-style: none;  
-  text-align: center;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-family: 'Poppins', sans-serif;
-  font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
+}
+.guide_list1 li {
+  list-style: none;
+  text-align: left;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+  padding-bottom: 10px;
+  
+
 
 }
+.guide_list2 li {
+  list-style: none;
+  text-align: left;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1em;
+  padding-bottom: 20px;
+ 
+
+}
+
 .guide h1{
   text-align: center;
   text-decoration: underline;
   font-family: 'IBM Plex Sans', sans-serif;
   font-family: 'Poppins', sans-serif;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 40px; 
+  font-size: 2em; 
+
+}
+.guide_list1{
+  display: inline-block;
+    width: 20%;
+  margin: 0px 100px 0px 200px
+  
+}
+.guide_list2{
+  display: inline-block;
+  width: 20%;
+  margin: 0 100px 0 425px;
+
+}
+
+/******************************************
+/* baked goods
+/*******************************************/
+
+.baked{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+}
+.baked h1{
+  font-size: 2em;
+  text-align: center;
+  text-decoration: underline;
+  color: #88888c;
+}
+.baked_{
+  color: #88888c;
+  display: inline-block;
+  width: 33%;
+  padding-left: 60px;
+  padding-top: 60px;
+
+}
+.baked_ ul li {
+  list-style: none;
+}
+
+.baked_ ul li a{
+  color: #88888c;
+}
+.baked_ ul li a:hover{
+  color:#FFBD59;
+}
+
+/******************************************
+/* breakfast
+/*******************************************/
+
+.b_fast{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+
+}
+.b_fast h1{
+  font-size: 2em;
+  text-align: center;
+  text-decoration: underline;
+  color: #88888c;
+}
+  .bfast_{
+    color: #88888c;
+    display: inline-block;
+    width: 33%;
+    padding-left: 60px;
+    padding-top: 60px;
+  
+  }
+  .bfast_ h2 {
+    list-style: none;
+  }
+  .bfast_ ul li {
+    list-style: none;
+  }
+  
+  .bfast_ ul li a{
+    color: #88888c;
+  }
+  .bfast_ ul li {
+    list-style: none;
+  }
+  
+  .bfast_ ul li a:hover{
+    color:#FFBD59;
+  }
+  
+
+/******************************************
+/* dinner
+/*******************************************/
+.dinner{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  color: #88888c;
+
+}
+.dinner h1{
+  font-size: 2em;
+  text-align: center;
+  text-decoration: underline;
+  color: #88888c;
+}
+.dinner ul li a{
+  color: #88888c;
+
+}
+.dinner ul li{
+  list-style: none
+}
+  
+.dinner ul li a:hover{
+  color:#FFBD59;
+}
+.container1{
+  width:50%;
+  float: left;
+  padding-left: 200px;
+  padding-top: 60px;
+  align-items: center;
+
+}
+.container2{
+  width: 50%;
+  float: left;
+  padding-top: 400px;
+}
+.container2 img{
+  border: black solid 1px;
+  height: 402px;
+  width:602px;
+  align-items: center;
+}
+
+/******************************************
+/* desert
+/*******************************************/
+.dessert{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  color: #88888c;
 
 }
 
 
+.dessert h1{
+  font-size: 2em;
+  text-align: center;
+  text-decoration: underline;
+  color: #88888c;
+}
+
+.dessert ul li a{
+  color: #88888c;
+
+}
+.dessert ul li{
+  list-style: none
+}
+  
+.dessert ul li a:hover{
+  color:#FFBD59;
+}
+.container1{
+  width:50%;
+  float: left;
+  padding-left: 200px;
+  padding-top: 60px;
+  align-items: center;
+
+}
+.dessert .container2{
+  width: 50%;
+  float: left;
+  padding-top: 60px;
+  padding-left:400px;
+}
+
+
 /******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
+/* alternatives
+/*******************f************************/
+.alt{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+}
+.alt h1{
+  font-size: 2em;
+  text-align: center;
+  text-decoration: underline;
+}
+table{
+  border: 2px solid ;
+  border-collapse: collapse;
+  text-align: center;
+  empty-cells:hide;
+  float:left;
+  width:80%;
+  margin: 10% 20% 20% 10%;
+  
+}
+th {
+  text-align: center;
+  background-color: #FFBD59;
+  width:20%;
+  
+}
+
+td{
+  border: 1px solid #88888c;
+
+}
