@@ -1,6 +1,6 @@
 # Recipe
 A recipe blog to store recipes I've tried.
-Eventually, I would like to incorporate a recipe parser using python (etc) to extract recipes online. 
+
 Categories:
   Baked Goods:
     Tradtional
